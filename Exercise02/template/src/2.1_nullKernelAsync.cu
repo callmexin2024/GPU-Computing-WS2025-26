@@ -37,12 +37,32 @@
  */
 
 #include <stdio.h>
-
 #include "chTimer.h"
+#include <cuda_runtime.h>
+#include <math.h>
 
 __global__ void NullKernel()
 {
 
+}
+
+static void	get_synchronous_startup_time()
+{
+	const int cIterations = 1000000;
+    double total_sync_time = 0.0;
+
+    chTimerTimestamp start, stop;
+    printf("Measuring synchronous launch time.... "); fflush(stdout);
+
+    chTimerGetTime(&start);
+    for (int i = 0; i < cIterations; i++) {
+        NullKernel<<<1,1>>>();
+        cudaDeviceSynchronize();
+    }
+    chTimerGetTime(&stop);
+
+    total_sync_time = 1e6 * chTimerElapsedTime(&start, &stop);
+    printf("%.6f us\n", total_sync_time / cIterations);
 }
 
 int main()
@@ -60,11 +80,14 @@ int main()
 	chTimerGetTime( &stop );
 
 	{
-		double microseconds = 1e6*chTimerElapsedTime( &start, &stop );
-		double usPerLaunch = microseconds / (float) cIterations;
+		double microseconds = 1e6 * chTimerElapsedTime( &start, &stop );
+		double usPerLaunch = microseconds / (double) cIterations;
 
-		printf( "%.2f us\n", usPerLaunch );
+		printf( "%.6f us\n", usPerLaunch );
 	}
 
+	printf("\n");
+
+	get_synchronous_startup_time();
 	return 0;
 }
