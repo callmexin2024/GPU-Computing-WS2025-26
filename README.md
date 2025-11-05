@@ -37,18 +37,18 @@ The course introduces GPU architecture and programming with CUDA, focusing on pe
 ## ⚙️ Environment
 
 #### Hardware
-- **CPU:** AMD EPYC 7302P  
+- **CPU:** AMD EPYC 7302P
 - **GPU:** NVIDIA RTX 2080  
 
 #### Software
-- **OS:** Debian 12  
+- **OS:** Debian 12
 - **NVIDIA Driver (nvidia-smi):** 580.65.06  
 - **CUDA:** 13.0  
 
 #### Python
-- **Python:** 3.12.1  
-- **NumPy:** 2.3.4  
-- **Pandas:** 2.3.3  
+- **Python:** 3.12.1
+- **NumPy:** 2.3.4
+- **Pandas:** 2.3.3
 - **Matplotlib:** 3.10.7
 
 ---
