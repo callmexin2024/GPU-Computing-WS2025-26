@@ -2,9 +2,13 @@
 
 This repository contains my assignments and project work for the course **GPU Computing** taught by **Prof. Dr. Holger Fröning** at Heidelberg University.
 
+---
+
 ## 📘 Course Overview
 
 The course introduces GPU architecture and programming with CUDA, focusing on performance optimization, memory consistency, and advanced GPU concepts. It also explores alternatives to CUDA through lectures and practical programming exercises.
+
+---
 
 ## 🗓 Course Schedule
 
@@ -28,6 +32,8 @@ The course introduces GPU architecture and programming with CUDA, focusing on pe
 | **29.01.2026** | 12. Future                            |                                          |
 | **05.02.2026** | Exam                                  |                                          |
 
+---
+
 ## ⚙️ Environment
 
 #### Hardware
@@ -44,6 +50,8 @@ The course introduces GPU architecture and programming with CUDA, focusing on pe
 - **NumPy:** 2.3.4  
 - **Pandas:** 2.3.3  
 - **Matplotlib:** 3.10.7
+
+---
 
 ## 📖 Assignment Progress
 
