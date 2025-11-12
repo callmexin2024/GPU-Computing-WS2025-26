@@ -1,16 +1,16 @@
-# GPU-Computing-WS2025-26
+## GPU-Computing-WS2025-26
 
 This repository contains my assignments and project work for the course **GPU Computing** taught by **Prof. Dr. Holger Fröning** at Heidelberg University.
 
 ---
 
-## 📘 Course Overview
+### 📘 Course Overview
 
 The course introduces GPU architecture and programming with CUDA, focusing on performance optimization, memory consistency, and advanced GPU concepts. It also explores alternatives to CUDA through lectures and practical programming exercises.
 
 ---
 
-## 🗓 Course Schedule
+### 🗓 Course Schedule
 
 | Date           | Lecture                               | Exercise                                 |
 |----------------|---------------------------------------|------------------------------------------|
@@ -34,18 +34,21 @@ The course introduces GPU architecture and programming with CUDA, focusing on pe
 
 ---
 
-## ⚙️ Environment
+### ⚙️ Environment
 
 #### Hardware
+
 - **CPU:** AMD EPYC 7302P
 - **GPU:** NVIDIA RTX 2080  
 
 #### Software
+
 - **OS:** Debian 12
-- **NVIDIA Driver (nvidia-smi):** 580.65.06  
-- **CUDA:** 13.0  
+- **NVIDIA Driver:** 580.65.06  
+- **CUDA:** 13.0
 
 #### Python
+
 - **Python:** 3.12.1
 - **NumPy:** 2.3.4
 - **Pandas:** 2.3.3
@@ -53,14 +56,14 @@ The course introduces GPU architecture and programming with CUDA, focusing on pe
 
 ---
 
-## 📖 Assignment Progress
+### 📖 Assignment Progress
 
 | Week | Task                                      | Status         |
 |------|-------------------------------------------|----------------|
 | 01   | Reading / Amdahl                          | ✅ Done        |
 | 02   | Kernel launch, data movement              | ✅ Done        |
-| 03   | Global memory                             | 🔄 In Progresse|
-| 04   | MMULT                                     | ⏳             |
+| 03   | Global memory                             | ✅ Done|
+| 04   | MMULT                                     | 🔄 In Progresse|
 | 05   | MMULT GPU + Optimizations (Bonus)         | ⏳             |
 | 06   | Reduction                                 | ⏳             |
 | 07   | n-Body + Optimizations (Bonus)            | ⏳             |
@@ -68,7 +71,7 @@ The course introduces GPU architecture and programming with CUDA, focusing on pe
 
 ---
 
-## 📜 License
+### 📜 License
 
 This project is released under the **BSD 2-Clause License**.  
 You are free to use, modify, and redistribute this software, with or without modifications, as long as the copyright notice and this disclaimer are retained.
